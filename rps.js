@@ -27,6 +27,7 @@ let value = 0;
 
 function ask (value) {
     value = prompt("Choose and enter a value between rock, paper, scissors");
+    value = value.trim();
     value = value.toLowerCase();
     return value;
 }
