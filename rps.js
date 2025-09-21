@@ -22,15 +22,22 @@ let hchoice = prompt("Choose and enter a value between rock, paper, scissors");
 console.log(hchoice); //checking correct input transition through getHumanChoice
 
 function getHumanChoice (hchoice) {
-    if (hchoice === "rock") {
+    if ((hchoice.toLowerCase()) === "rock") {
     hchoice = hchoice;
-    } else if (hchoice === "paper") {
+    } else if ((hchoice.toLowerCase()) === "paper") {
     hchoice = hchoice;
-    } else if (hchoice === "scissors") {
+    } else if ((hchoice.toLowerCase()) === "scissors") {
     hchoice = hchoice;
     } else {
     hchoice = "invalid reload the page";
-    } return hchoice;
+    } return (hchoice.toLowerCase());
 }
 
 console.log(getHumanChoice(hchoice));
+
+let humanScore = 0;
+let computerScore = 0;
+
+function playRound (humanChoice, computerChoice) {
+    
+}
