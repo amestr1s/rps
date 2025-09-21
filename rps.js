@@ -20,17 +20,18 @@ console.log(getString(choice));
 
 let hchoice = prompt("Choose and enter a value between rock, paper, scissors");
 console.log(hchoice); //checking correct input transition through getHumanChoice
+hchoice = hchoice.toLowerCase();
 
 function getHumanChoice (hchoice) {
-    if ((hchoice.toLowerCase()) === "rock") {
+    if (hchoice === "rock") {
     hchoice = hchoice;
-    } else if ((hchoice.toLowerCase()) === "paper") {
+    } else if (hchoice === "paper") {
     hchoice = hchoice;
-    } else if ((hchoice.toLowerCase()) === "scissors") {
+    } else if (hchoice === "scissors") {
     hchoice = hchoice;
     } else {
     hchoice = "invalid reload the page";
-    } return (hchoice.toLowerCase());
+    } return hchoice;
 }
 
 console.log(getHumanChoice(hchoice));
