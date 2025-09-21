@@ -1,4 +1,6 @@
 //console.log("Hello World")
+alert("Welcome to a game of 5 rounds of Rock Paper Scissors played through alert boxes");
+
 let max = 3;
 
 function getComputerChoice (max) {
@@ -44,6 +46,7 @@ function getHumanChoice (hchoice) {
     hchoice = hchoice;
     } else {
     hchoice = "invalid value reload the page to start again";
+    alert("This round won't count, this answer is invalid");
     } 
     console.log("User chose " + (hchoice));
     return hchoice;
@@ -114,6 +117,7 @@ hchoice = ask(value);
 computerChoice = getString(choice);
 humanChoice = getHumanChoice(hchoice);
 playRound(humanChoice, computerChoice);
+alert("Final score is user: " + (humanScore) + " PC: " + (computerScore));
 }
 
 playGame();
